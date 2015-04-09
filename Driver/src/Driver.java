@@ -43,6 +43,10 @@ public class Driver {
 				
 				WebElement TXT_name = driver.findElement(By.name(v_obj_id));
 				TXT_name.sendKeys(v_Data);
+				int j;
+				for (j=1;j<10;j++){
+					System.out.println("Iam the value : " + j);
+				}
 			case COMPARE:
 				WebElement LBL_id = driver.findElement(By.id(v_Data));
 				String v_Error_msg= LBL_id.getText();
