@@ -42,5 +42,6 @@
 	<classpathentry kind="lib" path="E:/Personal/Software/Selenium/selenium-2.44.0/libs/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="E:/Personal/Software/Selenium/selenium-2.44.0/libs/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="E:/Personal/Software/Selenium/Fillo-1.12/Fillo-1.12.jar"/>
+	<classpathentry kind="lib" path="E:/Personal/Software/Selenium/junit-4.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

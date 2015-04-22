@@ -1,6 +1,10 @@
+import junit.framework.Assert;
+
+import org.junit.Assert.*;
+import org.junit.Test;
+
 import Exception.FilloException;
 import Fillo.*;
-
 
 import org.openqa.selenium.ie.*;
 import org.openqa.selenium.*;
@@ -19,7 +23,12 @@ public class Driver {
 	 * @param args
 	 * @throws FilloException
 	 */
-	public static void main(String[] args) throws FilloException {
+	public static void main(String[] args) {
+		System.out.println("Value 1");
+	}
+	
+	@Test
+	public void Driver() throws FilloException {
 		// TODO Auto-generated method stub
 		String v_Data_sheet = "E:\\Personal\\Selenium_Proj\\Data_Sheet.xlsx";
 		Fillo fillo = new Fillo();
@@ -40,6 +49,7 @@ public class Driver {
 				
 				System.out.println(v_Data);
 				driver.get(v_Data);
+				Assert.assertEquals("Google Home Page", driver.getTitle());
 				
 			case INPUT:
 				
@@ -48,6 +58,7 @@ public class Driver {
 				int j;
 				for (j=1;j<10;j++){
 					System.out.println("Iam the value : " + j);
+					Assert.assertEquals(j, j);
 				}
 			case COMPARE:
 				WebElement LBL_id = driver.findElement(By.id(v_Data));
@@ -67,3 +78,6 @@ public class Driver {
 	}
 
 }
+
+
+
